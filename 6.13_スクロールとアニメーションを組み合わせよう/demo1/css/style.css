@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+}
+
+h1 {
+    color: #e82020;
+    margin: 50vh 0 50vh;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    padding: 2rem;
+}
+
+h2{
+    padding: 1rem;
+}
+
+.animation-css {
+    animation: zoom 2s infinite
+}
+
+@keyframes zoom {
+    0% {
+        color: #c300dd;
+        scale: 1;
+    }
+
+    50% {
+        color: #24ec59;
+        scale: 2;
+    }
+
+    100% {
+        color: #1115f6;
+        scale: 1;
+    }
+}

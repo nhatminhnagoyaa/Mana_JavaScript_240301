@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    padding: 1rem;
+}
+
+h1 {
+    color: #e82020;
+}
+
+#heading {
+    font-size: 3rem;
+    transition: 4s;
+    opacity: 0;
+    margin: 120vh auto;
+}
+
+.scroll {
+    color: #e82020;   
+    font-size: 2rem; 
+    text-align: center;
+    position: fixed;
+    top: 0;
+     width: 100%;
+}

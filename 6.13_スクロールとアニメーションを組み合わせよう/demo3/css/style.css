@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.heading{
+    color: #0bd;
+    font-size: 4rem;
+    font-weight: bold;
+    margin : 600px 0;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.active{
+    opacity: 1;
+    transition: 1s;
+    transform: translateX(0);
+}
+
+.scroll{
+    color: #ed5726;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%
+}

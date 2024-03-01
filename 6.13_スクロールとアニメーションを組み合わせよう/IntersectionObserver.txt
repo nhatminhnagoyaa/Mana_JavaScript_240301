@@ -1,0 +1,26 @@
+1.https://www.webcreatorbox.com/tech/intersection-observer
+2.https://css-tricks.com/an-explanation-of-how-the-intersection-observer-watches/
+
+Ví dụ cơ bản như sau:
+const options = {
+  root: document.body,
+  rootMargin: '0px',
+  threshold: 0
+}
+
+function callback (entries, observer) {
+  console.log(observer);
+  
+  entries.forEach(entry => {
+    console.log(entry);
+  });
+}
+
+let observer = new IntersectionObserver(callback, options);
+observer.observe(targetElement);
+
+- Đây rootlà phần tử cha, thường là phần tử cuộn, chứa các phần tử được quan sát. Đây có thể là bất kỳ phần tử đơn lẻ nào trên trang nếu cần. Nếu thuộc tính hoàn toàn không được cung cấp hoặc giá trị được đặt thành null thì chế độ xem được đặt thành phần tử gốc.
+
+- Đây rootMarginlà một chuỗi các giá trị mô tả cái có thể được gọi là lề của phần tử gốc, ảnh hưởng đến hộp giới hạn kết quả mà phần tử đích cuộn vào. Nó hoạt động giống như thuộc tính CSS margin. Bạn có thể có các giá trị như 10px 15px 20pxgiá trị mang lại cho chúng ta lề trên là 10px, lề trái và lề phải là 15px và lề dưới là 20px. Chỉ có khung giới hạn bị ảnh hưởng chứ không phải chính phần tử đó. Hãy nhớ rằng độ dài duy nhất được phép là pixel và giá trị phần trăm, có thể âm hoặc dương. Cũng lưu ý rằng tính năng này rootMarginkhông hoạt động nếu phần tử gốc không phải là phần tử thực tế trên trang, chẳng hạn như khung nhìn.
+
+Các giá trị khác nhau là tỷ lệ phần trăm sử dụng từ 0 đến 1, giống như opacitytrong CSS, vì vậy giá trị 0,5 sẽ được coi là 50%
