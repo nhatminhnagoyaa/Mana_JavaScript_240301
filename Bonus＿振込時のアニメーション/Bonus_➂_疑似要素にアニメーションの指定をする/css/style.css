@@ -1,0 +1,27 @@
+.scroll{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+/* PHẦN TỬ GIẢ */
+.scroll::before{
+    background-color: #ed8;
+    position: absolute;
+    content: '';
+    display: block;
+    inset: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1, h2, p {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 2em;
+}
